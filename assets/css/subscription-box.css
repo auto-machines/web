@@ -1,0 +1,62 @@
+#mc_embed_signup {
+    margin-top: 60px;
+    text-align: center; /* Center-aligns the title */
+    border: 1px solid #ffffff; /* Thin white line around the box */
+    border-radius: 15px; /* Roundrect shape for the box */
+    padding: 20px; /* Padding around the content */
+    background-color: transparent; /* Removes the fill inside the main box */
+    width: 450px; /* Sets a max-width for the sign-up area */
+    margin-left: auto; /* Centers the sign-up box */
+    margin-right: auto; /* Centers the sign-up box */
+}
+
+#mc_embed_signup h2 {
+    font-size: 1.5em; /* Larger size for the title */
+    margin-bottom: 20px; /* Space between title and form elements */
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Increased space between the input container elements */
+}
+
+.mc-field-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mc_embed_signup input[type="email"] {
+    color: #ffffff; /* Sets the text color to white */
+    border: 1px solid #ffffff; /* Pure white border */
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    min-width: 250px; /* Minimum width for the email input */
+}
+
+#mc_embed_signup input[type="email"]::placeholder {
+    color: #ffffff;
+}
+
+#mc_embed_signup input[type="submit"] {
+    color: #ffffff; /* Text color white */
+    border-radius: 10px;
+    border: 1px solid #ffffff; /* White border */
+    padding: 10px 20px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for background, color, font-weight, and text-shadow */
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease; /* Transition for Webkit browsers */
+    -moz-transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease, text-shadow 0.3s ease; /* Transition for Mozilla browsers */
+}
+
+#mc_embed_signup input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color to semi-transparent white */
+    font-weight: normal; /* Reset the font weight to normal on hover */
+    color: transparent; /* Make the text transparent */
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25); /* Add a semi-transparent black text shadow to make the text visible */
+}
