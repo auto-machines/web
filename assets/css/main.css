@@ -553,18 +553,54 @@ input, select, textarea {
 		width: 90%;
 	}
 
-		#header h1 {
+/*		#header h1 {
 			text-transform: uppercase;
 			font-size: 3.35em;
 			font-weight: 600;
 			letter-spacing: -0.025em;
 			line-height: 1em;
+			font-style: italic;
+		}
+
+		.larger {
+		  font-size: 1.2em;
+		  display: inline-block;
+		}
+*/
+
+		@keyframes glow {
+		  from {
+		    text-shadow: 0 0 3px #30AA9F, 0 0 5px #30AA9F, 0 0 10px #30AA9F;
+		  }
+		  to {
+		    text-shadow: 0 0 5px #00e6e6, 0 0 7px #00e6e6, 0 0 12px #00e6e6;
+		  }
+		}
+
+		#header h1 {
+		  text-transform: uppercase;
+		  font-size: 3.35em;
+		  font-weight: 600;
+		  letter-spacing: -0.025em;
+		  line-height: 1em;
+		  font-style: italic;
+		  font-family: 'Montserrat', sans-serif;
+		  color: #ffffff; /* Sets text color */
+		  background: none; /* Removes any background styles */
+		  animation: glow 1s ease-in-out infinite alternate;
 		}
 
 		.larger {
 		  font-size: 1.2em; /* Adjust the size as needed */
 		  display: inline-block; /* This can help with alignment issues if they arise */
 		}
+
+
+		.larger {
+		  font-size: 1.2em; /* Adjust the size as needed */
+		  display: inline-block; /* This can help with alignment issues if they arise */
+		}
+
 
 		#header p {
 			font-size: 1.25em;

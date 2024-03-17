@@ -41,6 +41,15 @@
     color: #ffffff;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s; /* transitions to prevent sudden changes */
+    background-color: transparent !important;
+    color: white !important;
+}
+
 #mc_embed_signup input[type="submit"] {
     color: #ffffff; /* Text color white */
     border-radius: 10px;
