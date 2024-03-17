@@ -554,16 +554,23 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			font-size: 4.35em;
-			font-weight: 900;
-			letter-spacing: -0.035em;
+			text-transform: uppercase;
+			font-size: 3.35em;
+			font-weight: 600;
+			letter-spacing: -0.025em;
 			line-height: 1em;
+		}
+
+		.larger {
+		  font-size: 1.2em; /* Adjust the size as needed */
+		  display: inline-block; /* This can help with alignment issues if they arise */
 		}
 
 		#header p {
 			font-size: 1.25em;
+			font-weight: 500;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
 		}
 
 		#header nav {
@@ -979,6 +986,7 @@ input, select, textarea {
 	/* Header */
 
 		#header h1 {
+			text-transform: uppercase;
 			font-size: 2.5em;
 		}
 
