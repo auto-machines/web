@@ -587,7 +587,7 @@ input, select, textarea {
 		  font-family: 'Montserrat', sans-serif;
 		  color: #ffffff; /* Sets text color */
 		  background: none; /* Removes any background styles */
-		  animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 5s ease-in-out infinite alternate;
 		}
 
 		.larger {
