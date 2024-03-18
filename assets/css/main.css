@@ -587,7 +587,8 @@ input, select, textarea {
 		  font-family: 'Montserrat', sans-serif;
 		  color: #ffffff; /* Sets text color */
 		  background: none; /* Removes any background styles */
-		  animation: glow 5s ease-in-out infinite alternate;
+		  animation: glow 5
+			s ease-in-out infinite alternate;
 		}
 
 		.larger {
@@ -1027,7 +1028,7 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: 1.12em;
 		}
 
 		#header nav {

@@ -8,10 +8,43 @@
     width: 450px; /* Sets a max-width for the sign-up area */
     margin-left: auto; /* Centers the sign-up box */
     margin-right: auto; /* Centers the sign-up box */
+
+#mc_embed_signup .mc-field-group input,
+#mc_embed_signup input.button {
+    box-sizing: border-box;
+}
+
+
+#mc_embed_signup .mc-field-group input {
+    width: 100%;
+    margin: 0;
+}
+
+#mc_embed_signup input.button {
+    width: 100%;
+    margin-top: 10px; /* Adjust the margin-top as necessary */
+}
+
+
+#mc_embed_signup form {
+    display: flex;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+    justify-content: space-between; /* Adjusts space between child elements */
+}
+
+#mc_embed_signup .mc-field-group {
+    flex: 1 0 auto; /* Allows this element to grow and shrink as needed */
+    margin-right: 10px; /* Adjust spacing between the input and button */
+}
+
+#mc_embed_signup input.button {
+    flex: 0 0 auto; /* Button will not grow but can shrink if necessary */
+}
+
 }
 
 #mc_embed_signup h2 {
-    font-size: 1.5em; /* Larger size for the title */
+    font-size: 1.25em; /* Larger size for the title */
     margin-bottom: 20px; /* Space between title and form elements */
 }
 
@@ -68,4 +101,82 @@ input:-webkit-autofill:active {
     font-weight: normal; /* Reset the font weight to normal on hover */
     color: transparent; /* Make the text transparent */
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.25); /* Add a semi-transparent black text shadow to make the text visible */
+}
+
+
+@media (max-width: 600px) {
+    #mc_embed_signup form {
+        flex-direction: column;
+
+    #mc_embed_signup form {
+        flex-direction: column;
+    }
+
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup input.button {
+        width: 100%; /* Full width for small screens */
+        margin-right: 0;
+        margin-bottom: 1em; /* Add some space between the elements */
+    }
+
+    #mc_embed_signup input.button {
+        margin-top: 1em; /* Add some space between the elements */
+    }
+
+    }
+
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup input.button {
+        width: auto; /* Allows the element to fill the width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+  #mc_embed_signup {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  #mc_embed_signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* this will make sure the children width match the parent */
+    margin: 0;
+    padding: 0;
+  }
+
+  #mc_embed_signup .mc-field-group {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  #mc_embed_signup .mc-field-group input {
+    width: 100%; /* Allows input to fill up the width of its parent */
+    margin-bottom: 10px; /* Space between the input field and the button */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  #mc_embed_signup input.email {
+    padding: 10px; /* Same padding for the input */
+    margin: 0; /* Remove any margin that could be adding extra width */
+  }
+
+  #mc_embed_signup input.button {
+    padding: 10px 20px; /* Same padding for the button */
+    margin: 0; /* Align the button without any margin */
+  }
+
+  .subscription-container {
+      flex-direction: column; /* Stack the children vertically */
+      gap: 15px; /* Smaller gap for narrow screens */
+  }
+
+  .subscription-container input,
+  .subscription-container .button {
+      width: 100%; /* Full width for narrow screens */
+      margin: 0; /* Remove any additional margin */
+  }
+
 }
